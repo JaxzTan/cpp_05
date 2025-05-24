@@ -1,26 +1,27 @@
-# Prerequisites
-*.d
+*.txt
+*.out
+.vscode
+*.objs
+FragTrap
+ScavTrap
+Fragtrap
+ClapTrap
+Animal
+watch_it_burn
+Abstract_class
 
-# Compiled Object files
-*.slo
-*.lo
+# Compiled object files
 *.o
 *.obj
+*.lo
+*.slo
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
+# Compiled dynamic libraries
 *.so
 *.dylib
 *.dll
 
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
+# Compiled static libraries
 *.lai
 *.la
 *.a
@@ -30,3 +31,47 @@
 *.exe
 *.out
 *.app
+
+# Debug files
+*.dSYM/
+*.stackdump
+*.core
+*.pch
+*.pdb
+
+# Generated files
+*.gcno
+*.gcda
+*.gcov
+*.gch
+*.ipdb
+*.iobj
+*.idb
+*.tlog
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+CTestTestfile.cmake
+Testing/
+
+# IDEs and editors
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+*.temp
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Other
+.vscode/
+*.DS_Store
+Thumbs.db
