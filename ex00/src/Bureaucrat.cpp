@@ -6,16 +6,14 @@
 /*   By: chtan <chtan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/24 13:13:53 by chtan             #+#    #+#             */
-/*   Updated: 2025/05/24 14:26:28 by chtan            ###   ########.fr       */
+/*   Updated: 2025/05/27 12:02:21 by chtan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/Bureaucrat.hpp"
 
 Bureaucrat::Bureaucrat() : _name("default"), _grade(150)
-{
-
-}
+{}
 
 Bureaucrat::Bureaucrat(const std::string name, int grade) : _name(name)
 {	
