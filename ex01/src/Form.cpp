@@ -6,7 +6,7 @@
 /*   By: chtan <chtan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/24 15:05:43 by chtan             #+#    #+#             */
-/*   Updated: 2025/05/24 15:06:13 by chtan            ###   ########.fr       */
+/*   Updated: 2025/05/28 13:57:32 by chtan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,7 @@ Form::Form(const std::string name, const int sign_grade, const int execute_grade
 }
 
 Form::Form(const Form &other) : _name(other._name), _is_signed(other._is_signed), _sign_grade(other._sign_grade), _execute_grade(other._execute_grade)
-{
-
-}
+{}
 
 Form &Form::operator=(const Form &other)
 {
@@ -40,9 +38,7 @@ Form &Form::operator=(const Form &other)
 }
 
 Form::~Form()
-{
-
-}
+{}
 
 // Member function
 void Form::beSigned(const Bureaucrat &bureaucrat)

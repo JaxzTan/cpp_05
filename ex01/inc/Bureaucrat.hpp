@@ -6,7 +6,7 @@
 /*   By: chtan <chtan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/24 13:13:33 by chtan             #+#    #+#             */
-/*   Updated: 2025/05/28 07:37:53 by chtan            ###   ########.fr       */
+/*   Updated: 2025/05/28 13:57:08 by chtan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ class Bureaucrat
 {
 	private:
 		const std::string	_name;
-		int			_grade;
+		int					_grade;
 
 	public:
 		// Constructors
