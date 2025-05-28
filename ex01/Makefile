@@ -6,11 +6,11 @@
 #    By: chtan <chtan@student.42kl.edu.my>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/09 12:35:05 by chtan             #+#    #+#              #
-#    Updated: 2025/05/03 19:24:54 by chtan            ###   ########.fr        #
+#    Updated: 2025/05/28 08:23:39 by chtan            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME			=	./Animal
+NAME			=	./Program
 CXX				=	@c++
 CXXFLAGS		=	-Wall -Wextra -Werror -pedantic -std=c++98 -g3
 SRC				=	./src/*.cpp
