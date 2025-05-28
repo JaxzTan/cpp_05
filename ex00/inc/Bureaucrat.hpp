@@ -6,7 +6,7 @@
 /*   By: chtan <chtan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/24 13:13:33 by chtan             #+#    #+#             */
-/*   Updated: 2025/05/24 14:24:51 by chtan            ###   ########.fr       */
+/*   Updated: 2025/05/28 10:52:04 by chtan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,13 @@ class Bureaucrat {
         Bureaucrat& operator=(const Bureaucrat& other);
     
         // Member functions
-        int         incrementGrade(void);
-        int         decrementGrade(void);
+        void         incrementGrade(void);
+        void         decrementGrade(void);
 
         // Getters
         std::string getName() const;
         int         getGrade() const;
-
+        
         // Exceptions
 		class GradeTooHighException : public std::exception
 		{

@@ -6,7 +6,7 @@
 /*   By: chtan <chtan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/24 13:13:53 by chtan             #+#    #+#             */
-/*   Updated: 2025/05/27 12:02:21 by chtan            ###   ########.fr       */
+/*   Updated: 2025/05/28 10:52:23 by chtan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,18 +40,16 @@ Bureaucrat &Bureaucrat::operator=(const Bureaucrat &other) {
     return *this;
 }
 
-int Bureaucrat::incrementGrade(void) {
+void    Bureaucrat::incrementGrade(void) {
     if (_grade <= 1)
         throw GradeTooHighException();
     _grade--;
-    return _grade;
 }
 
-int Bureaucrat::decrementGrade(void) {
+void    Bureaucrat::decrementGrade(void) {
     if (_grade >= 150)
         throw GradeTooLowException();
     _grade++;
-    return _grade;
 }
 
 // Exception classes for Bureaucrat

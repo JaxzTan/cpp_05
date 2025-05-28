@@ -6,7 +6,7 @@
 /*   By: chtan <chtan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/24 13:13:47 by chtan             #+#    #+#             */
-/*   Updated: 2025/05/24 14:30:08 by chtan            ###   ########.fr       */
+/*   Updated: 2025/05/28 10:37:56 by chtan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@
 
 int main(void)
 {
-	std::cout << "\033[33m" << std::endl << "Test ex00" << "\033[0m" << std::endl;
+	std::cout << "\033[33m" << "Test ex00" << "\033[0m" << std::endl;
 	std::cout << "\033[33m" << std::endl << "Test too high and too low creation" << "\033[0m" << std::endl;
 	try
 	{
