@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chtan <chtan@student.42kl.edu.my>          +#+  +:+       +#+        */
+/*   By: chtan <chtan@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/24 13:13:47 by chtan             #+#    #+#             */
-/*   Updated: 2025/05/28 10:37:56 by chtan            ###   ########.fr       */
+/*   Updated: 2025/05/31 11:15:38 by chtan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,8 @@
 
 int main(void)
 {
-	std::cout << "\033[33m" << "Test ex00" << "\033[0m" << std::endl;
-	std::cout << "\033[33m" << std::endl << "Test too high and too low creation" << "\033[0m" << std::endl;
+	std::cout << Yellow << "Test ex00" << Reset << std::endl;
+	std::cout << Yellow << std::endl << "Test too high and too low creation" << Reset << std::endl;
 	try
 	{
 		Bureaucrat Sleeper1("Bernd", 1500);
@@ -47,7 +47,7 @@ int main(void)
 		std::cerr << "Exception caught: " << e.what() << std::endl;
 	}
 
-	std::cout << "\033[33m" << std::endl << "Test increasing" << "\033[0m" << std::endl;
+	std::cout << Yellow << std::endl << "Test increasing" << Reset << std::endl;
 	Bureaucrat bob("Bob", 2);
 	std::cout << bob << std::endl;
 	try
@@ -62,16 +62,16 @@ int main(void)
 	
 	try
 	{
-	bob.incrementGrade();
+		bob.incrementGrade();
 	}
 	catch(const std::exception& e)
 	{
-	std::cerr << "Exception caught: " << e.what() << std::endl;
+		std::cerr << "Exception caught: " << e.what() << std::endl;
 	}
 	std::cout << bob << std::endl;
 
 
-	std::cout << "\033[33m" << std::endl << "Test decreasing" << "\033[0m" << std::endl;
+	std::cout << Yellow << std::endl << "Test decreasing" << Reset << std::endl;
 	Bureaucrat tim("Tim", 149);
 	std::cout << tim << std::endl;
 	try
@@ -86,11 +86,11 @@ int main(void)
 	
 	try
 	{
-	tim.decrementGrade();
+		tim.decrementGrade();
 	}
 	catch(const std::exception& e)
 	{
-	std::cerr << "Exception caught: " << e.what() << std::endl;
+		std::cerr << "Exception caught: " << e.what() << std::endl;
 	}
 	std::cout << tim << std::endl;
 	
