@@ -11,6 +11,7 @@ watch_it_burn
 Abstract_class
 Program
 Hello_shrubbery
+
 # Compiled object files
 *.o
 *.obj

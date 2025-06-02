@@ -6,7 +6,7 @@
 #    By: chtan <chtan@student.42kl.edu.my>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/09 12:35:05 by chtan             #+#    #+#              #
-#    Updated: 2025/06/02 10:02:17 by chtan            ###   ########.fr        #
+#    Updated: 2025/06/02 11:22:12 by chtan            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,6 +29,7 @@ $(NAME)			:	$(SRC)
 
 clean			:
 	@rm -rf $(OBJ_DIR) && rm -rf ./*.o
+	@rm -rf Hello_shrubbery
 	@echo "\033[0;31mProgram deleted successfully!\033[0m"
 
 fclean			:	clean
