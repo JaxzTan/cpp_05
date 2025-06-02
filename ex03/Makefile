@@ -6,11 +6,11 @@
 #    By: chtan <chtan@student.42kl.edu.my>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/09 12:35:05 by chtan             #+#    #+#              #
-#    Updated: 2025/05/28 13:55:39 by chtan            ###   ########.fr        #
+#    Updated: 2025/06/02 11:29:11 by chtan            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME			=	./Form_up_maggots!
+NAME			=	./Program
 CXX				=	@c++
 CXXFLAGS		=	-Wall -Wextra -Werror -pedantic -std=c++98 -g3
 SRC				=	./src/*.cpp
@@ -29,6 +29,7 @@ $(NAME)			:	$(SRC)
 
 clean			:
 	@rm -rf $(OBJ_DIR) && rm -rf ./*.o
+	@rm -rf Hello_shrubbery
 	@echo "\033[0;31mProgram deleted successfully!\033[0m"
 
 fclean			:	clean
