@@ -6,105 +6,18 @@
 /*   By: chtan <chtan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/24 13:13:47 by chtan             #+#    #+#             */
-/*   Updated: 2025/05/28 08:25:15 by chtan            ###   ########.fr       */
+/*   Updated: 2025/06/02 15:59:26 by chtan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/Form.hpp"
 
-// int main(void)
-// {
-// 	std::cout << "\033[33m" << std::endl << "Test ex01" << "\033[0m" << std::endl;
-
-// 	std::cout << "\033[33m" << std::endl << "Test too high and too low creation" << "\033[0m" << std::endl;
-// 	try
-// 	{
-// 		Bureaucrat Sleeper1("Bernd", 1500);
-// 	}
-// 	catch(const std::exception &e)
-// 	{
-// 		std::cerr << "Exception caught: " << e.what() << std::endl;
-// 	}
-
-// 	try
-// 	{
-// 		Bureaucrat Sleeper2("Olaf", -10);
-// 	}
-// 	catch(const std::exception &e)
-// 	{
-// 		std::cerr << "Exception caught: " << e.what() << std::endl;
-// 	}
-
-// 	std::cout << "\033[33m" << std::endl << "Test increasing" << "\033[0m" << std::endl;
-// 	Bureaucrat bob("Bob", 2);
-// 	std::cout << bob << std::endl;
-// 	try
-// 	{
-// 		bob.incrementGrade();
-// 	}
-// 	catch(const std::exception& e)
-// 	{
-// 		std::cerr << "Exception caught: " << e.what() << std::endl;
-// 	}
-// 	std::cout << bob << std::endl;
-	
-// 	try
-// 	{
-// 	bob.incrementGrade();
-// 	}
-// 	catch(const std::exception& e)
-// 	{
-// 	std::cerr << "Exception caught: " << e.what() << std::endl;
-// 	}
-// 	std::cout << bob << std::endl;
-
-
-
-// 	std::cout << "\033[33m" << std::endl << "Test decreasing" << "\033[0m" << std::endl;
-// 	Bureaucrat tim("Tim", 149);
-// 	std::cout << tim << std::endl;
-// 	try
-// 	{
-// 		tim.decrementGrade();
-// 	}
-// 	catch(const std::exception& e)
-// 	{
-// 		std::cerr << "Exception caught: " << e.what() << std::endl;
-// 	}
-// 	std::cout << tim << std::endl;
-	
-// 	try
-// 	{
-// 	tim.decrementGrade();
-// 	}
-// 	catch(const std::exception& e)
-// 	{
-// 	std::cerr << "Exception caught: " << e.what() << std::endl;
-// 	}
-// 	std::cout << tim << std::endl;
-
-
-// 	std::cout << "\033[33m" << std::endl << "Test ex01" << "\033[0m" << std::endl;
-
-// 	Form id_form("ID FORM", 100, 90);
-// 	Bureaucrat mr_slow;
-// 	Bureaucrat mr_id("MR_ID", 100);
-// 	std::cout << id_form;
-	
-// 	mr_slow.signForm(id_form);
-// 	std::cout << id_form;
-
-// 	mr_id.signForm(id_form);
-// 	std::cout << id_form;
-	
-// 	return (0);
-// }
 
 int main(void)
 {
-	std::cout << "\033[33m" << std::endl << "Test ex01" << "\033[0m" << std::endl;
+	std::cout << YELLOW << std::endl << "Test ex01" << RESET << std::endl;
 
-	std::cout << "\033[33m" << std::endl << "Test too high and too low creation" << "\033[0m" << std::endl;
+	std::cout << YELLOW << std::endl << "Test too high and too low creation" << RESET << std::endl;
 	try
 	{
 		Bureaucrat Sleeper1("Bernd", 1500);
@@ -123,7 +36,7 @@ int main(void)
 		std::cerr << "Exception caught: " << e.what() << std::endl;
 	}
 
-	std::cout << "\033[33m" << std::endl << "Test increasing" << "\033[0m" << std::endl;
+	std::cout << YELLOW << std::endl << "Test increasing" << RESET << std::endl;
 	Bureaucrat bob("Bob", 2);
 	std::cout << bob;
 	try
@@ -142,15 +55,13 @@ int main(void)
 	}
 	catch(const std::exception& e)
 	{
-	std::cerr << "Exception caught: " << e.what() << std::endl;
+		std::cerr << "Exception caught: " << e.what() << std::endl;
 	}
 	std::cout << bob;
 
-
-
-	std::cout << "\033[33m" << std::endl << "Test decreasing" << "\033[0m" << std::endl;
+	std::cout << YELLOW << std::endl << "Test decreasing" << RESET << std::endl;
 	Bureaucrat tim("Tim", 149);
-	std::cout << tim;
+	std::cout << tim << std::endl;
 	try
 	{
 		tim.decrementGrade();
@@ -159,21 +70,19 @@ int main(void)
 	{
 		std::cerr << "Exception caught: " << e.what() << std::endl;
 	}
-	std::cout << tim;
+	std::cout << tim << std::endl;
 	
 	try
 	{
-	tim.decrementGrade();
+		tim.decrementGrade();
 	}
 	catch(const std::exception& e)
 	{
 	std::cerr << "Exception caught: " << e.what() << std::endl;
 	}
-	std::cout << tim;
+	std::cout << tim << std::endl;
 
-
-	std::cout << "\033[33m" << std::endl << "Test ex01" << "\033[0m" << std::endl;
-
+	std::cout << YELLOW << std::endl << "Test ex01" << RESET << std::endl;
 	Form id_form("ID FORM", 100, 90);
 	Bureaucrat mr_slow;
 	Bureaucrat mr_id("MR_ID", 100);

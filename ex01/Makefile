@@ -6,11 +6,11 @@
 #    By: chtan <chtan@student.42kl.edu.my>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/09 12:35:05 by chtan             #+#    #+#              #
-#    Updated: 2025/05/28 13:55:39 by chtan            ###   ########.fr        #
+#    Updated: 2025/06/02 16:01:33 by chtan            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME			=	./Form_up_maggots!
+NAME			=	./Program
 CXX				=	@c++
 CXXFLAGS		=	-Wall -Wextra -Werror -pedantic -std=c++98 -g3
 SRC				=	./src/*.cpp

@@ -6,16 +6,14 @@
 /*   By: chtan <chtan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/24 15:05:43 by chtan             #+#    #+#             */
-/*   Updated: 2025/05/28 13:57:32 by chtan            ###   ########.fr       */
+/*   Updated: 2025/06/02 16:01:10 by chtan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/Form.hpp"
 
 Form::Form() : _name("Default"), _is_signed(false), _sign_grade(150), _execute_grade(150)
-{
-
-}
+{}
 
 Form::Form(const std::string name, const int sign_grade, const int execute_grade) : _name(name), _is_signed(false), _sign_grade(sign_grade), _execute_grade(execute_grade)
 {
@@ -43,20 +41,20 @@ Form::~Form()
 // Member function
 void Form::beSigned(const Bureaucrat &bureaucrat)
 {
-    if (bureaucrat.getGrade() <= _sign_grade)
-        _is_signed = true;
+    if (bureaucrat.getGrade() <= this->_sign_grade)
+        this->_is_signed = true;
     else
         throw GradeTooLowException();
 }
 
 std::string Form::getName() const
 {
-    return (_name);
+    return (this->_name);
 }
 
 bool Form::getIsSigned() const
 {
-    return (_is_signed);
+    return (this->_is_signed);
 }
 
 int Form::getSignGrade() const
@@ -66,7 +64,7 @@ int Form::getSignGrade() const
 
 int Form::getExecuteGrade() const
 {
-    return (_execute_grade);
+    return (this->_execute_grade);
 }
 
 const char *Form::GradeTooHighException::what() const throw()

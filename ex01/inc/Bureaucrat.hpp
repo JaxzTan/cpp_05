@@ -6,7 +6,7 @@
 /*   By: chtan <chtan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/24 13:13:33 by chtan             #+#    #+#             */
-/*   Updated: 2025/05/28 13:57:08 by chtan            ###   ########.fr       */
+/*   Updated: 2025/06/02 15:57:53 by chtan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@
 # include <exception>
 # include "Form.hpp"
 
+# define YELLOW "\033[33m"
+# define RESET "\033[0m"
 class Form;
 
 class Bureaucrat
