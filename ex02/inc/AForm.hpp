@@ -6,7 +6,7 @@
 /*   By: chtan <chtan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 10:02:56 by chtan             #+#    #+#             */
-/*   Updated: 2025/06/02 10:03:18 by chtan            ###   ########.fr       */
+/*   Updated: 2025/06/02 16:07:23 by chtan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class AForm
 		bool				_is_signed;
 		const int			_sign_grade;
 		const int			_execute_grade;
-		virtual void	performAction() const = 0;
+		virtual void		performAction() const = 0;
 
 	public:
 		// Constructors

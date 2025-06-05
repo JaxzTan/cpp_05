@@ -6,7 +6,7 @@
 /*   By: chtan <chtan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 10:04:19 by chtan             #+#    #+#             */
-/*   Updated: 2025/06/02 10:04:33 by chtan            ###   ########.fr       */
+/*   Updated: 2025/06/05 14:26:44 by chtan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,5 +36,4 @@ class ShrubberyCreationForm : public AForm
 			public:
 				virtual const char *what() const throw();
 		};
-
 };
