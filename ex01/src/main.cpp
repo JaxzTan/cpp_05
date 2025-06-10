@@ -6,7 +6,7 @@
 /*   By: chtan <chtan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/24 13:13:47 by chtan             #+#    #+#             */
-/*   Updated: 2025/06/02 15:59:26 by chtan            ###   ########.fr       */
+/*   Updated: 2025/06/10 16:42:47 by chtan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 
 int main(void)
 {
-	std::cout << YELLOW << std::endl << "Test ex01" << RESET << std::endl;
+	std::cout << YELLOW << std::endl << "Test ex00" << RESET << std::endl;
 
-	std::cout << YELLOW << std::endl << "Test too high and too low creation" << RESET << std::endl;
+	std::cout << YELLOW << "Test too high and too low creation" << RESET << std::endl;
 	try
 	{
 		Bureaucrat Sleeper1("Bernd", 1500);

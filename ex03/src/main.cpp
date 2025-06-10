@@ -6,7 +6,7 @@
 /*   By: chtan <chtan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 10:19:41 by chtan             #+#    #+#             */
-/*   Updated: 2025/06/10 11:22:45 by chtan            ###   ########.fr       */
+/*   Updated: 2025/06/10 16:47:01 by chtan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ int main(void)
 	{
 	std::cerr << "Exception caught: " << e.what() << std::endl;
 	}
-	std::cout << bob;
+	std::cout << bob << std::endl << std::endl;
 
 
 
@@ -84,16 +84,11 @@ int main(void)
 	{
 	std::cerr << "Exception caught: " << e.what() << std::endl;
 	}
-	std::cout << tim;
+	std::cout << tim << std::endl << std::endl;
 
-
-
-	std::cout << "\033[33m" << std::endl << "Test ex02" << "\033[0m" << std::endl;
-
-	std::cout << "\033[33m" << std::endl << "Test ex02 ShrubberyCreationForm" << "\033[0m" << std::endl;
+	std::cout << "\033[33m" << "Test ex02 ShrubberyCreationForm" << "\033[0m" << std::endl;
 	Bureaucrat Mr_Shrubby("Mr_Shrubby", 130);
 	ShrubberyCreationForm Shrubby_form("Hello");
-	std::cout << std::endl;
 	std::cout << Shrubby_form;
 	Mr_Shrubby.signForm(Shrubby_form);
 	std::cout << Shrubby_form;
