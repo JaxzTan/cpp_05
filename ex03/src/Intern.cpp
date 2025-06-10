@@ -6,7 +6,7 @@
 /*   By: chtan <chtan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 09:31:54 by chtan             #+#    #+#             */
-/*   Updated: 2025/06/10 09:41:25 by chtan            ###   ########.fr       */
+/*   Updated: 2025/06/10 11:15:57 by chtan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,17 +42,17 @@ AForm *Intern::makeForm(const std::string form_name, const std::string form_targ
 	
 	switch (i)
 	{
-	case 0:
-		std::cout << "Intern creates " << form_name << std::endl;
-		return (new ShrubberyCreationForm(form_target));
-	case 1:
-		std::cout << "Intern creates " << form_name << std::endl;
-		return (new RobotomyRequestForm(form_name));
-	case 2:
-		std::cout << "Intern creates " << form_name << std::endl;
-		return (new PresidentialPardonForm (form_target));
-	default:
-		std::cout << "Form is not existing" << std::endl;
-		return NULL;
+		case 0:
+			std::cout << "Intern creates " << form_name << std::endl;
+			return (new ShrubberyCreationForm(form_target));
+		case 1:
+			std::cout << "Intern creates " << form_name << std::endl;
+			return (new RobotomyRequestForm(form_target));
+		case 2:
+			std::cout << "Intern creates " << form_name << std::endl;
+			return (new PresidentialPardonForm (form_target));
+		default:
+			std::cout << "Form is not existing" << std::endl;
+			return NULL;
 	}
 }

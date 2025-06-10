@@ -6,7 +6,7 @@
 /*   By: chtan <chtan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 10:11:14 by chtan             #+#    #+#             */
-/*   Updated: 2025/06/02 10:12:00 by chtan            ###   ########.fr       */
+/*   Updated: 2025/06/10 11:19:23 by chtan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,13 @@
 RobotomyRequestForm::RobotomyRequestForm() 
     : AForm("Robotomy Request Form", 72, 45), _target("default") 
 {
-    srand(time(NULL)); // Seed the random number generator
+    // srand(time(NULL)); // Seed the random number generator
 }
 
 RobotomyRequestForm::RobotomyRequestForm(const std::string target) 
     : AForm("Robotomy Request Form", 72, 45), _target(target) 
 {
-    srand(time(NULL)); // Seed the random number generator
+    // srand(time(NULL)); // Seed the random number generator
 }
 
 RobotomyRequestForm::RobotomyRequestForm(const RobotomyRequestForm &other) 
