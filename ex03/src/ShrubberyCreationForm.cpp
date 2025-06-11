@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ShrubberyCreationForm.cpp                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chtan <chtan@student.42kl.edu.my>          +#+  +:+       +#+        */
+/*   By: chtan <chtan@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 10:12:06 by chtan             #+#    #+#             */
-/*   Updated: 2025/06/05 10:52:33 by chtan            ###   ########.fr       */
+/*   Updated: 2025/06/11 14:53:44 by chtan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ ShrubberyCreationForm::~ShrubberyCreationForm()
 {}
 
 void ShrubberyCreationForm::performAction() const {
-    std::ofstream ofs(_target + "_shrubbery");
+    std::ofstream ofs((_target + "_shrubbery").c_str());
     if (!ofs.is_open()) {
         throw OpenFileExeption();
     }
